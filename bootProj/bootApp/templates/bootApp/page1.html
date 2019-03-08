@@ -1,0 +1,14 @@
+{% extends 'bootApp/index.html' %}
+
+{% block content %}
+    <article>
+        <h3>History</h3>
+       <p>The City of Paris is the centre and seat of government of the Île-de-France, or Paris Region, which has an estimated official 2019 population of 12,213,364, or about 18 percent of the population of France.[1] The Paris Region had a GDP of €681 billion (US$850 billion) in 2016, accounting for 31 percent of the GDP of France, and was the 5th largest region by GDP in the world.[2] According to the Economist Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the second-most expensive city in the world, behind Singapore and ahead of Zurich, Hong Kong, Oslo and Geneva.</p>
+    {% endblock%}
+
+    <hr>
+
+    {% block footer %}
+        <button id="color2"><a href="{% url 'index' %}">Previous</a></button>
+        <button id="color3"><a href="{% url 'page2' %}">Next</a></button>
+    {% endblock %}

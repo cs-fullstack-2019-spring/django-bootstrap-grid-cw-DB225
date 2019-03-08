@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootApp/css/index.css' %}">
+</head>
+<body>
+<div class="container">
+    {% block header %}
+    {% load static %}
+    <h1>DO YOU KNOW PARIS (FRANCE)</h1>
+    <img src="{% static 'bootApp/images/flag-of-france.png' %}" alt="My image">
+    {% endblock %}
+
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    <hr>
+
+    {% block footer %}
+    <a href="{% url 'page1' %}"><button id="color1">Go to pages</button></a>
+    {% endblock %}
+</div>
+
+</body>
+</html>
